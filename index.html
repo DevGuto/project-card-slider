@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Project Card</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class=" content">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/job1.jpg" alt="">
+                        </div>
+                        <div class="name-job">
+                            <span class="name">Auxiliar</span>
+                            <span class="company">Loja Fictícia</span>
+                        </div>
+                        <div class="button">
+                            <button class="aboutMe">About Me</button>
+                            <button class="hireMe">Hire Me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class=" content">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/job1.jpg" alt="">
+                        </div>
+                        <div class="name-job">
+                            <span class="name">Vendedor</span>
+                            <span class="company">Loja Fictícia</span>
+                        </div>
+                        <div class="button">
+                            <button class="aboutMe">About Me</button>
+                            <button class="hireMe">Hire Me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class=" content">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/job1.jpg" alt="">
+                        </div>
+                        <div class="name-job">
+                            <span class="name">Operador</span>
+                            <span class="company">Loja Fictícia</span>
+                        </div>
+                        <div class="button">
+                            <button class="aboutMe">About Me</button>
+                            <button class="hireMe">Hire Me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        centeredSlides: false,
+        slidesPerGroupSkip: 1,
+        grabCursor: true,
+        keyboard: {
+          enabled: true,
+        },
+        breakpoints: {
+          769: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+</body>
+</html>
